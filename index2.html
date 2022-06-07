@@ -6,6 +6,16 @@
   </head>
 
   <body>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
     <div class="wrapper">
       <nav class="menu">
         <button aria-expanded="false" aria-controls="menu-list">
@@ -13,7 +23,7 @@
           <span class="close">×</span>
           Menu
         </button>
-        <ul>
+        <ul id="myLinks">
           <li>
             <a href="">Tacos</a>
           </li>
